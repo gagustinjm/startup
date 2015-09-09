@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Sign up!</title>
+	<style>
+		table {			
+			width:20%;
+			position: relative;
+			margin-left: 400px;
+		}
+
+	</style>
+</head>
+<body>
+	<form id="form_sign_up">
+	  <table id="sign_up">
+	    <tr>
+	      <td><label for="firstName">First Name:</label></td>
+	      <td>
+	        <input type="text" name="firstName" id="firstName" required>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td><label for="lastName">Last Name:</label></td>
+	      <td>
+	      	<input type="text" name="lastName" id="lastName" required>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td><label for="email">Email:</label></td>
+	      <td>
+	      	<input type="email" name="email" id="email" placeholder="Enter your email" required>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td><label for="bday">Birthday:</label></td>
+	      <td>
+	      	<input type="date" name="bday" min="1900-01-01" >
+	      </td>
+	    </tr>
+
+	    <tr>
+	      <td><label for="f_sports">Favourite Sport:</label></td>
+	      <td>
+	        <select name="f_sports" id="f_sports">
+	          <option value="football">Fotball</option>
+	          <option value="tennis">Tennis</option>
+	          <option value="rugby">Rugby</option>
+	          <option value="handball">Handball</option>
+	          <option value="cricket">Cricket</option>
+	          <option value="gaming">Gaming</option>
+	        </select></td>
+	    </tr>
+	     <tr>
+	      <td><label for="bio">Bio:</label></td>
+	      <td>
+	      	<textarea rows="4" cols="50" name="bio" form="form_sign_up">
+			Enter a small brio here.</textarea>
+	      </td>
+	    </tr>	    
+	    <tr>
+	    	<td><input type="submit" value="Sent data" id="send_data"></td>
+	    	<td><input type="button" value="Clear Fields" id="clear_fields"></td>   
+	    </tr>
+	  </table>
+  </form>
+</body>
+</html>

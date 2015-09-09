@@ -1,0 +1,89 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { font-size: 50%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
+
+
+.container {	
+  	margin: 0 auto;
+  	position: relative;
+  	width: 90%
+}
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+/* Practice - Point 2. */
+section * {
+	text-align: center;
+}
+
+header {
+	background-color: #777;
+	border: 1px solid #777;
+	border-radius: 10px 10px; 
+	color: #FFF;
+	margin-top: 30px;
+	position: relative;		
+}
+
+
+#mainSection {
+	height: auto;
+	left: 0px;
+	top: 50px;
+	position: absolute;
+	width: 40%,
+}
+
+#searchOptions {
+	position: absolute;
+	top: 250px;
+}
+
+#btnSearchAlbums {
+	margin-top: 20px;
+}
+
+#albums {
+	left: 40%;
+	position: absolute;
+	right: 0%;
+	width: 60%;
+	
+}
+
+.alias {
+	margin-bottom: 15px;
+}

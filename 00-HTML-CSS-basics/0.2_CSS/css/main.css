@@ -1,0 +1,116 @@
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { font-size: 50%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
+
+html {
+
+  background-color: #000;
+  color: #FFF;
+  font-size: 20px;
+  margin: 25px;
+  padding: 0px
+}
+
+body {
+  position: relative
+}
+
+header, nav, section, aside, footer { 
+  border-radius: 5px 10px;    
+  text-align: center
+}
+
+aside {
+    border-left: 5px solid black;
+    height: 490px;
+    left: 75%;
+    max-height: 490px;
+    max-width: 25%;
+    position: absolute;    
+    right: 0px;
+    width: 25%;        
+}
+
+footer {  
+    position: relative;
+    text-align: center;
+    top: 50em
+}
+
+
+/* Specificity - 2.3.3 */  
+.footer, .sidebar {
+  font-size: 10px
+}
+
+.content {    
+  background-color: #777;
+  font-size: 14px;
+  height: 490px;
+  left: 25%;
+  max-height: 490px;
+  position: absolute;  
+  right: 25%;
+  width: 50%;   
+}
+
+.header {
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;    
+}
+
+.navigation {
+    border-right: 5px solid black;
+    font-size: 15px;
+    height: 490px;
+    left: 0%;       
+    max-height: 490px;
+    max-width: 25%;
+    position: absolute;
+    width: 25%; 
+}
+
+
+/* Specificity - 2.3.4 - 2.3.5 */  
+*[class$="r"] {
+  background-color: red;
+}
+
+*[class*='a']:not([class$="r"]) {
+  background-color: blue;
+}
+
+/* Specificity - 2.3.6 - 2.3.7 
+  a = style in line (1,0,0,0)
+  b = number of ID attributes in the selector 
+  c = number of atributes and pseudo clases in the selector
+  d = number of element names and pseudo-elements
+*/ 
+
+body > header.header, section.content, nav.navigation, 
+footer.footer, aside.sidebar {
+  font-weight: normal;
+}
+
+.oh-no-inline-styles{
+  background-color: #0F0 !important
+};
