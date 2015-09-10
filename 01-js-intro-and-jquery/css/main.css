@@ -1,0 +1,72 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#albums {
+	left: 45%;
+	position: absolute;
+	right: 0%;
+	width: 55%;	
+}
+
+.alias {
+	margin-bottom: 15px;
+}
+
+#btnSearchAlbums {
+	margin-top: 20px;
+}
+
+.container {	
+  	margin: 0 auto;
+  	position: relative;
+  	width: 90%
+}
+
+header {
+	background-color: #777;
+	border: 1px solid #777;
+	border-radius: 10px 10px; 
+	color: #FFF;
+	margin-top: 30px;
+	position: relative;		
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+#mainSection {
+	height: auto;
+	left: 0px;
+	top: 50px;
+	position: absolute;
+}
+
+@media (min-width: 640px) {
+  .column {
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+#searchOptions {
+	position: absolute;
+	top: 250px;
+}
+
+/* Practice - Point 2. */
+section * {
+	text-align: center;
+}
