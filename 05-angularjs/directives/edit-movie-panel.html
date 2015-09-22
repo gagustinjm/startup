@@ -1,0 +1,17 @@
+<div id="editPanel" class="panel" ng-show="editPanel">
+	<form name="editForm" ng-submit="editForm.$valid && editMovie()">
+		<h1>Editing {{movieEdit.name}}</h1>
+		<b>Name: </b>
+			<input class="form-control ng-pristine ng-invalid" ng-model="movieEdit.name" type="text" required/>
+		<br>
+		<b>Director: </b>
+			<input class="form-control ng-pristine ng-invalid" ng-model="movieEdit.director" type="text" required/>
+		<br>
+			<b>Description: </b>
+			<textarea class="form-control ng-pristine ng-invalid" ng-model="movieEdit.description" height="300" required></textarea>
+		<br>
+			<input class="btn btn-success pull-left" type="submit" value="Save changes"/>
+			<button type="button" class="btn btn-danger pull-right" ng-click="showEditPanel($index)">Cancel</button>
+		<br>
+	</form>
+</div>

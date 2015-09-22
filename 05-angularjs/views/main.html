@@ -1,0 +1,22 @@
+<div class="container">
+
+	<nav-menu></nav-menu>		
+
+	<new-movie-panel></new-movie-panel>	
+
+	<edit-movie-panel></edit-movie-panel>
+
+	<div class="list-group">
+		<div id="moviesContainer" class="list-group-item" ng-repeat="movie in listMovies">
+			<h1 class="movieName bg-primary"> {{movie.name}} </h1>
+			<img id="imagenSmall" ng-src="{{movie.image}}"/>
+			<h2> Directed by: {{movie.director}} </h2>
+			<br>
+			<a class="btn btn-primary" ng-href="#/movie-description/{{$index}}" ng-click="showMovie()">Show Description</a>
+			<button type="button" class="btn btn-success" ng-click="showEditPanel($index)">Edit</button>
+			<button type="button" class="btn btn-danger" ng-click="removeMovie($index)">Remove</button>
+		</div>
+	</div>
+		
+</div>	
+

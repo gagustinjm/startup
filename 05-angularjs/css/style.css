@@ -1,0 +1,59 @@
+header {
+	padding-bottom: 15px;
+}
+
+#imagenSmall {
+	height: 50%;
+	width: 50%
+}
+
+#btnNewMovie {
+	border: 2px solid #888;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: center;
+    text-align: center;
+    width: 70%;
+	font-size: 20px
+}
+
+.panel {
+	border: 2px solid #888;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    padding: 25px;
+    position: center
+}
+
+#moviesContainer, #movieDescription {	
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-bottom: 25px;	
+	position: center;
+	text-align: center
+}
+		
+.movieName {
+	text-align : center;
+}
+		
+.movieImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+		
+.precioProducto {
+	text-align: center;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: #F4787E;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}

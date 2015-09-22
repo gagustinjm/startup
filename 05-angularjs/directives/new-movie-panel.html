@@ -1,0 +1,17 @@
+<div class="panel" ng-show="toggle">
+	<form id="newMovieForm" name="movieForm" ng-submit="movieForm.$valid && addMovie()">
+		<h1>Add a new movie!</h1>
+		<b>Name: </b>
+		<input class="form-control ng-pristine ng-invalid" ng-model="movieNew.name" type="text" placeholder="Enter movie name here" required/>
+		<br>
+		<b>Director: </b>
+		<input class="form-control ng-pristine ng-invalid" ng-model="movieNew.director" type="text" placeholder="Enter movie director here" required/>
+		<br>
+		<b>Description: </b>
+		<textarea class="form-control ng-pristine ng-invalid" ng-model="movieNew.description" height="300" placeholder="Enter movie description here" required></textarea>
+		<br>
+		<input class="btn btn-success pull-left" type="submit" value="Add Movie!"/>		
+		<button type="button" class="btn btn-danger pull-right" ng-click="toggle = !toggle">Cancel</button>
+		<br>
+    </form>
+</div>
