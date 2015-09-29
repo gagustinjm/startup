@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML APIs</title>	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<section>
+		<fieldset>
+			<h1> Insert a new Player here! </h1>
+			<label for="name"> Player Name:</label>
+			<input id="playerName" type="text" name="name" placeholder="Insert player name"></input>
+			
+			<label for="name"> Player Description:</label>
+			<textarea id="playerDescription" placeholder="Inser player description here"></textarea>
+			
+			<button id="saveLocalStorage">Save LocalStorage</button>
+			<button id="saveIndexedDB">Save DataIndexDB</button>			
+			<button id="clearSave"> Clear Saved Content</button>			
+		</fieldset>
+		</section>
+
+		<section>
+			<fieldset>
+			<h1>Drop text file here to add a new player!</h1>
+			<div id="drop_zone">
+				<output id="list"></output>
+			</div>
+			</fieldset>	
+		</section>
+
+		<section>
+			<fieldset>
+			<h1> Try Web Sockets! </h1>
+			<div id="output">
+				<label for="message">Message: </label>
+				<input type="text" name="message" id="txtMessage" placeholder="Enter your message here!"></input>
+				<input id="sendMessage" type="button" name="btnSend" value="Send Message"></input><br>
+			</div>
+			</fieldset>
+		</section>				
+</body>
+</html>

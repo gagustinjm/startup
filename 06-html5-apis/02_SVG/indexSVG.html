@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML APIs</title>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<section>
+			<h1>Drawing with SVG!</h1>
+			<svg width="900" height="600">
+				<defs>
+				    <linearGradient id="gradBarca" x1="0%" y1="0%" x2="0%" y2="100%">				    	
+				      	<stop offset="10%" style="stop-color:rgb(50,50,250);stop-opacity:1" />
+				      	<stop offset="50%" style="stop-color:rgb(250,50,50);stop-opacity:1" />
+				      	<stop offset="100%" style="stop-color:rgb(50,50,250);stop-opacity:1" />
+				    </linearGradient>
+				    <linearGradient id="gradReal" x1="0%" y1="0%" x2="0%" y2="100%">
+				      	<stop offset="10%" style="stop-color:rgb(0,0,220);stop-opacity:1" />
+				      	<stop offset="50%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+				      	<stop offset="100%" style="stop-color:rgb(0,0,220);stop-opacity:1" />
+				    </linearGradient>
+			   </defs>
+
+				<circle cx="50" cy="50" r="40" fill="url(#gradBarca)"/>	
+				<text x="135" y="30" fill="url(#gradBarca)" transform="rotate(30 135,15)">FC Barcelona</text>				
+				<text x="250" y="50" fill="black">vs</text>
+				<text x="280" y="-125" fill="url(#gradReal)" transform="rotate(30)">Boca Juniors</text>
+				<circle cx="480" cy="50" r="40" fill="url(#gradReal)"/>				
+			</svg>		
+		</section>
+	</div>				
+</body>
+</html>
